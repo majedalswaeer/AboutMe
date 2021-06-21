@@ -1,1 +1,3 @@
 # AboutMe
+## Hello there! I'm Majed Al-Swaeer, Graduated with a B'Sc in mechanical and maintenance engineering , I'm 23 years old and i have been always seeking a new demanding and rewarding challenges to utilize my skills 
+### this project was made in 21-6-2021, which we applied new things using ubuntu, vscode and other commands. this website belomgs to me where i wrote my story and my back ground, check it please :)
