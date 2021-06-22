@@ -3,13 +3,15 @@
 let username = prompt('Greeting from majed, please type your name below');
 console.log(username);
 alert('Welcome ' + username + ' to my website');
-alert('Lets Play a guessing Game');
-let Q = prompt('guess my original major : Mechanical engineering, industrial engineering or managment', 'Mechanical engineering');
+alert('Lets Play a guessing Game, Answer with just yes or no please !');
+
+let Q = prompt('Do you think that im looking for you right now ?', 'Type here');
 console.log(Q);
-if (Q = 'Mechanical engineering') {
+
+if (Q === 'yes' || Q === 'y') {
   alert('Corecct Answer ' + username + '!');
 } else {
-  alert('Try again please');
+  alert('things changing');
 }
 
 let QQ = prompt('do you think that my age is 23 ?', 'anwser yes or no');
