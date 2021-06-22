@@ -5,7 +5,7 @@ console.log(username);
 alert('Welcome ' + username + ' to my website');
 alert('Lets Play a guessing Game, Answer with just yes or no please !');
 
-let score=0;
+let score = 0;
 let Q = prompt('Do you think that im looking for you right now ?', 'Type here');
 console.log(Q);
 
@@ -76,28 +76,50 @@ alert('Your are the most welcome ' + username);
 
 let u = Number(prompt('guess from 1-10 how much i like your answers?'));
 let j;
-for(j = 0 ; j < 4 ; j++){
+for (j = 0; j < 4; j++) {
 
-  if(u === 7){
-    alert ('CORRECT, I LIKE NUM 7 :\')' );
+  if (u === 7) {
+    alert('CORRECT, I LIKE NUM 7 :\')');
     score++;
     break;
 
-  } else if( u < 7){
+  } else if (u < 7) {
     alert('low:(, Go higher!!');
     u = Number(prompt('guess from 1-10 how much i like your answers?'));
 
   } else if (u > 7) {
     alert('BE HUMBLE, Go LOWER!!');
     u = Number(prompt('guess from 1-10 how much i like your answers?'));
-  } else if (j===3){
+  } else if (j === 3) {
     alert('Failed:(!!, its seven');
 
   }
 }
 
+let i;
+for (i = 0; i < 6; i++) {
+  let sc = prompt('guess which type of seince i like the most?', 'physics, math, psychology, language\'s literature or medicine ');
+  let array = ['physics', 'math', 'psychology', 'language\'s literature', 'medicine'];
+  let z = array.length;
+  let fav = array[2];
+  let favv = array[0];
+  let m;
 
-alert('Congrats your score is' + score +'out of 7');
+  for (m = 0; m <= z; m++) {
+    if (sc === fav || sc === favv) {
+      alert('AMAZING, Its all about physics and psychology');
+      score++;
+      break;
+    } else {
+      alert('Wrong:(');
+
+    }
+
+    break;
+  }
+
+}
+alert('Congrats your score is' + score + 'out of 7');
 
 
 
