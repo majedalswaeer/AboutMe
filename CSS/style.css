@@ -67,5 +67,17 @@ h2 {
     font-size:17px !important; 
     line-height:1em !important; 
 }
+h3 { 
+  font-size:23px !important; 
+  line-height:1em !important;
+  text-align: center; 
+}
 
-  
+
+  ol{
+    text-decoration: none;
+    margin-left: 80px;
+    list-style-type: upper-roman;
+    text-decoration: none;
+    margin-left: 700px;
+  }

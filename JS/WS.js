@@ -5,11 +5,13 @@ console.log(username);
 alert('Welcome ' + username + ' to my website');
 alert('Lets Play a guessing Game, Answer with just yes or no please !');
 
+let score=0;
 let Q = prompt('Do you think that im looking for you right now ?', 'Type here');
 console.log(Q);
 
 if (Q === 'yes' || Q === 'y') {
   alert('Corecct Answer ' + username + '!');
+  score++;
 } else {
   alert('things changing');
 }
@@ -20,6 +22,7 @@ switch (QQ) {
 case 'y':
 case 'yes':
   alert('CORRECT ANSWER!');
+  score++;
   break;
 case 'n':
 case 'no':
@@ -33,6 +36,7 @@ switch (QQQ.toUpperCase()) {
 case 'Y':
 case 'YES':
   alert('CORRECT ANSWER!');
+  score++;
   break;
 case 'N':
 case 'NO':
@@ -46,6 +50,7 @@ switch (QQQQ.toUpperCase()) {
 case 'Y':
 case 'YES':
   alert('CORRECT ANSWER!');
+  score++;
   break;
 case 'N':
 case 'NO':
@@ -63,8 +68,44 @@ case 'yes':
 case 'n':
 case 'no':
   alert('RIGHT ANSWER, ISN\'T IT ?');
+  score++;
   break;
 }
 alert('Your are the most welcome ' + username);
+
+
+let u = Number(prompt('guess from 1-10 how much i like your answers?'));
+let j;
+for(j = 0 ; j < 4 ; j++){
+
+  if(u === 7){
+    alert ('CORRECT, I LIKE NUM 7 :\')' );
+    score++;
+    break;
+
+  } else if( u < 7){
+    alert('low:(, Go higher!!');
+    u = Number(prompt('guess from 1-10 how much i like your answers?'));
+
+  } else if (u > 7) {
+    alert('BE HUMBLE, Go LOWER!!');
+    u = Number(prompt('guess from 1-10 how much i like your answers?'));
+  } else if (j===3){
+    alert('Failed:(!!, its seven');
+
+  }
+}
+
+
+alert('Congrats your score is' + score +'out of 7');
+
+
+
+
+
+
+
+
+
 
 
