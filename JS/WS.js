@@ -97,9 +97,9 @@ for (j = 0; j < 4; j++) {
 }
 
 let i;
+let array = ['physics', 'math', 'psychology', 'language\'s literature', 'medicine'];
 for (i = 0; i < 6; i++) {
   let sc = prompt('guess which type of seince i like the most?', 'physics, math, psychology, language\'s literature or medicine ');
-  let array = ['physics', 'math', 'psychology', 'language\'s literature', 'medicine'];
   let z = array.length;
   let fav = array[2];
   let favv = array[0];
@@ -109,7 +109,7 @@ for (i = 0; i < 6; i++) {
     if (sc === fav || sc === favv) {
       alert('AMAZING, Its all about physics and psychology');
       score++;
-      break;
+      m=5;
     } else {
       alert('Wrong:(');
 
