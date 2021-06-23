@@ -1,7 +1,7 @@
 'use strict';
 
 let score = 0;
-
+alert('group project for lab four')
 let username = prompt('Greeting from majed, please type your name below');
 function funcone(){
   console.log(username);
